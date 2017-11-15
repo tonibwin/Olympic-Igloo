@@ -1,0 +1,16 @@
+﻿The only changes that were made to the source files were to the IglooScore2.java file. In the main function, there is an if statement that checks to see if array args[] is null or not. Though, array args[] has already been initialized so therefore it would unneccessary to check if args[] is null when clearly it is not.
+
+Before:
+
+   if (args==null || args.length != 3) {
+      System.err.println("Error: must supply three arguments!");
+      return;
+   }
+
+After:
+
+   if (args.length != 3) {
+      System.err.println("Error: must supply three arguments!");
+      return;
+   }
+	
